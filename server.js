@@ -1,7 +1,4 @@
 var app = require("express")();
-// var requestIp = require('request-ip');
-var os = require("os");
-
 app.get('/api/whoami', (req, res) => {
    var json = {
       ipaddress:req.headers['x-forwarded-for'],
